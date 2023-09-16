@@ -20,7 +20,8 @@ namespace TASK_universita.models
 		public string? Titolo { get; set; }
 		public string? Codice { get; set; }
 		public int Crediti { get; set; }
-		public override string ToString()
+        public List<Corso> ElencoStudenti { get; set; } = new List<Corso>();
+        public override string ToString()
 		{
 			return $"{Id} {Titolo} {Codice} {Crediti}";
 		}
