@@ -64,5 +64,14 @@ namespace TASK_universita.Controllers
             else
                 Console.WriteLine("Porca pupazza, qualcosa è andato storto");
         }
+        public void eliminaCorso(int corsoId)
+        {
+            CorsoDAL corDal = new CorsoDAL(configurazione);
+
+            if (corDal.delete(corsoId))
+                Console.WriteLine("Corso eliminato correttamente");
+            else
+                Console.WriteLine("Porca pupazza, qualcosa è andato storto");
+        }
     }
 }

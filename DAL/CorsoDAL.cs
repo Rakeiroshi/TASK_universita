@@ -132,7 +132,6 @@ namespace TASK_universita.DAL
             }
         }
 
-
         public bool update(Corso g)
         {
             using (SqlConnection connessione = new SqlConnection(stringaConnessione))
@@ -161,6 +160,11 @@ namespace TASK_universita.DAL
         }
 
         List<Corso> IDal<Corso>.FindAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool delete(Corso cor)
         {
             throw new NotImplementedException();
         }

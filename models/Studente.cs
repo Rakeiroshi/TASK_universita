@@ -21,6 +21,7 @@ namespace TASK_universita.models
 		public string? Nome { get; set; }
 		public string? Cognome { get; set; }
 		public string? Matricola { get; set; }
+        public List<Studente> ElencoStudenti { get; set; } = new List<Studente>();
         public override string ToString()
         {
             return $"{Id} {Nome} {Cognome} {Matricola}";
